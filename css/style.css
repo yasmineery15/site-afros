@@ -1,0 +1,380 @@
+@charset UTF-8;
+
+/*pour que les images s'adaptent aux blocs*/
+img{width:90%;}
+
+/*selecteur ouvrir l'accolade propriété deux points valeurpoint virgule je ferme l'accolade*/
+
+*{box-sizing: border-box;}
+/*etoile je m'adresse à tous les elements du site si j'ai une bordure et des marges internes mon bloc les prends en compte et n'aggrandit pas le contenu*/
+
+header figure{width: 7%}
+header figure img{width: 150px;}
+header{background-color: #F5EEE9;}
+header nav{width: 65%;
+text-align: center;
+/*marge interne en haut*/
+padding-top: 5%;}
+
+a{color: black;
+/*taille de la police*/
+font-size: 1.2rem;
+padding:10px;
+/*je ne veux pas de soulignement pour les textes*/
+text-decoration: none;}
+a:hover{color:burlywood;}
+figure{margin:0;
+padding:0;}
+/*j'enleve les marges internes et externes par defauts*/
+
+
+body{
+     
+}
+
+
+header,main,footer{
+    
+    margin-bottom: 30px;
+}
+
+section{
+    
+    margin-bottom: 20px;
+}
+
+figure{
+    
+}  
+nav {
+   
+}
+
+.flex{
+     /*methode flexbox*/
+display:flex;
+    /*je dirige les blocs enfants row:horizontal*/
+    
+flex-direction: row;
+    /*wrap retour à la ligne*/
+flex-wrap: wrap;
+    /*alignement des enfants dans le bloc*/
+    
+justify-content: space-around;
+padding: 20px;
+}
+
+.flex figure{width: 100%;height: 80%;}
+.flex article{width: 45%;}
+
+
+.flex2{
+     /*methode flexbox*/
+display:flex;
+    /*je dirige les blocs enfants row:horizontal*/
+    
+flex-direction: row;
+    /*wrap retour à la ligne*/
+flex-wrap: wrap;
+    /*alignement des enfants dans le bloc*/
+    
+justify-content: space-around;
+padding: 20px;
+}
+
+.flex h1 {width: 100%;}
+
+.flex2{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    text-align:center;
+}
+.cent{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.cent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infos{
+    margin-top: 5px;
+    display: flex;
+    flex-direction:column;
+    padding: 5px;
+}
+
+.infos button{
+    margin-top: auto;
+    align-self: center;
+}
+
+.accueil .flex article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+    width: 250px;
+    margin: 30px;
+}
+    
+.accueil figure.cent{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+        
+}
+
+
+.modele{width: 40%}
+.mannequin{width: 20%}
+
+
+.flex2 h2{color: #D1BBA9}
+.flex2{background-color:#F5EEE9;}
+
+
+.flex section{width:20%;}
+figure cent{width: 100%;}
+.bordure{
+border: 1px solid black;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px; 
+padding: 15px;}
+
+    
+img.rond{width: 300px;
+height: 300px;
+border-radius: 50%;
+/*ombree portée*/
+box-shadow: 5px 8px 6px -3px #000000;}
+
+footer{font-size: 1.3rem;
+background-color: #F5EEE9;}
+
+/*pas de décoration*/
+ul li{list-style-type: none;
+padding-bottom: 5px;}
+.flex button {justify-content: center;}
+button{display: block;
+width: 50%;
+background-color: red;
+color: white;
+border: none;
+padding: 10px;
+text-align: center;
+border-radius: 25px;}
+
+
+/*style page promo*/
+
+.banderole{background-color:#CDB7E3;}
+.promo{width:40%;}
+.texte{width:50%;color: #800020;}
+.tete{background-color: black;}
+.identite .navigation a{color: white;}
+.navigation a{width: 65%;}
+.navigation a {text-align: center;padding-top: 5%;}
+.rituel{background-color:#B5A192; }
+.identite{background-color: #A3B18A;}
+.types{width: 60%; background-color:#B5A192; }
+
+
+/*style page coiffures-meches*/
+
+.meches{background-color:#B5A192;}
+.page-coiffures .flex2 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    
+    margin:30px;
+    border-bottom-right-radius: 8px;
+}
+
+ .galerie{ 
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+     border: 2px solid #f1dec3;
+     width:70%;
+}
+.galerie article{width:45%;}
+
+.page-produit .coif{
+    width: 40%;
+    border-bottom-right-radius: 8px;
+}
+
+/*style page produits*/
+
+.produits{width:40%;}
+.produits h2{color: #D1BBA9;}
+.page-produit .flex2 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    
+    margin:30px;
+    border-bottom-right-radius: 8px;
+}
+
+ .galerie2{ 
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+     border: 2px solid #f1dec3;
+     width:100%;
+}
+.galerie2 article{width:45%;}
+
+.page-produit .pot{
+    width: 200px;
+    border-bottom-right-radius: 8px;
+}
+
+
+/*style page cheveux*/
+
+.chev{
+    display: block;
+    width: 70%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.contenu{
+    background-color:#B5A192; 
+} 
+
+
+
+.hair{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    text-align:center;
+}
+.qualite{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.qualite img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    width: 100%;
+    margin: 30px;
+}
+
+.qualite{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+/*style page bebes-enfants*/
+.bebe{background-color: #B5A192; }
+
+
+
+
+/*style page conseils*/
+
+/*carousel*/
+.carousel {
+width:90vw;
+max-width:900px;
+aspect-ratio:16/9;
+position:relative;
+overflow:hidden;
+border-radius:12px;
+}
+
+
+.slide {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+opacity:0;
+animation: fade 20s infinite;
+}
+
+
+.slide img {
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+
+.sous-titre {
+position:absolute;
+bottom:20px;
+left:20px;
+color: #fff;
+font-size: 18px;
+padding: 8px 12px;
+border-radius: 6px;
+}
+
+
+@keyframes fade {
+0%, 5% { opacity: 0; }
+5%, 80% { opacity: 1; }
+80%, 100% { opacity: 0; }
+}
+
+
+/* Delays pour chaque slide pour éviter superposition */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 5s; }
+.slide:nth-child(3) { animation-delay: 10s; }
+.slide:nth-child(4) { animation-delay: 15s; }
+
+.carousel{
+    width:100%;
+    margin:auto;
+    border: 2px transparent;
+    overflow: hidden;}
+
+/*style page hommes*/
+/*banniere decorative*/
+.man{
+    background-color:#C9A76C
+}
+.banniere{
+    width: 40%;
+}

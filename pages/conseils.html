@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<!-- declaration du document-->
+<html lang="fr">
+ <!-- balise html et déclarer la langue-->
+    <head>
+    <title>
+        https | afro hair
+    </title>
+    <link href="../css/style.css"
+    rel="stylesheet" type="text/css">
+
+<!--entête du document informations pour les moteur de recherche-->
+  
+  </head>
+            
+  
+<!--balises structurantes-->   
+  <body>
+<!--haut du site-->  
+  <header class="flex">
+      
+  <figure>
+<img src="../images/logo.PNG" alt="logo de la société">
+</figure>
+  <!--bloc de lien-->    
+  <nav>
+  <a href="../accueil.html">Accueil</a> 
+  <a href= "promos.html">Promos</a> 
+  <a href= "produits.html">Produits</a>     
+  <a href="cheveux.html">Cheveux</a>     
+  <a href="conseils.html">Conseils</a>  
+  <a href="coiffures-meches.html">Coiffures-Mèches</a>    
+  <a href="bebes-enfants.html">Bébés- Enfants</a>   
+  <a href="hommes.html">Hommes</a>  
+  </nav> 
+  </header>
+<!--balises structurantes-->   
+
+      
+<!--contenu principal-->  
+   <main>
+       
+   
+<!--section-->   
+  <section class="flex">
+  <h1> Conseils</h1> 
+<!-- CAROUSEL -->
+<div class="carousel">
+<div class="slides">
+<div class="slide"><h2 class="sous-titre">POURQUOI MES CHEVEUX CREPUS SONT SECS </h2><img src="../images/conseil1.jpg" alt="Conseil 1"></div>
+
+<div class="slide"><h2 class="sous-titre">COMMENT FAIRE POUSSER SES CHEVEUX CREPUS </h2> <img src="../images/conseil2.jpg" alt="Conseil 2"></div>
+
+<div class="slide"><h2 class="sous-titre">COMMENT NE PLUS AVOIR SES CHEVEUX AFRO CASSANT</h2> <img src="../images/conseil3.jpg" alt="Conseil 3"></div>
+
+<div class="slide"><h2 class="sous-titre">CHEVEUX SECS 4 CONSEILS A ADOPTER </h2>   <img src="../images/conseil4.jpg" alt="Conseil 4"></div>    
+
+</div>
+
+<!-- FIN. DU. CAROUSEL -->
+  </section>
+  
+  </main>
+<!--bas de page-->       
+   <footer class="flex">
+    <!--section 1 footer-->
+   <section>
+   <figure>
+   <img src= "../images/logo.PNG"alt="logo entreprise">  
+      
+    </figure>
+    <address> avenue de France</address>
+       
+    </section> 
+       
+    <!--section 2 footer-->
+   <section>
+   <a id="contact" name="contact"></a>    
+   &#x2709;&nbsp;afro-hair@gmail.com
+   <!--balise br retour à la ligne-->
+   <br>
+   &#x2706; &nbsp;01 20 30 67 18
+   </section>
+   
+   <!--section 3 footer-->    
+   <section>
+   <ul><!--liste non ordonné-->
+   <!-- éléments de la liste--> 
+   <li><a href="../accueil.html">Accueil</a></li>
+   <li><a href= "promos.html">Promos</a></li>      
+   <li><a href= "produits.html">Produits</a></li>      
+   <li><a href="cheveux.html">Cheveux</a></li>
+   <li><a href="#">Conseils</a></li>
+   <li><a href="coiffures-meches.html">Coiffures</a></li>
+   <li><a href="bebes-enfants.html">Bebes enfants</a></li>
+   <li><a href="hommes.html">Hommes</a></li>
+       
+   </ul>    
+ 
+       
+   </section>
+       
+   <!--section 4 footer-->    
+   <section>
+   <h3> Inscription à la Newsletter</h3>
+       
+   <!--form balise de formulaire, action ou est envoyé le formulaire il doit être traiter en programmation, method post les données du formulaire doivent être cachés enctype le type de données qu'on va envoyer texte image et id pour identifier le formulaire-->    
+   <form action="traitement.php" 
+   method="post"
+   enctype="multipart/form-data"
+   id="newsletter">
+       
+   <!--l'etiquette du champ-->    
+   <label for="email">Email:</label>
+   <!--l'etiquette du champ-->  
+       
+   <input type="email" id="email"
+   placeholder="afro-hair@gmail.com"
+   required="required" maxlength="60">       
+   <!--le champ de type email placeholder le texte qui aide l'utilisateur, required le champ    est obligatoire-->
+   <input type="submit"       
+    value="inscription" id=envoyer>      
+          
+   </form>
+       
+       
+   </section> 
+   </footer>         
+
+           
+<!-- le corps du document ou le contenu du site apparait-->
+  </body>
+
+    
+</html>
